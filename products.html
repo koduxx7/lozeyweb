@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Lozey Beauty</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="/"><img src="web-logo-removebg-preview.png" alt="Lozey Beauty Logo"></a>
+            </div>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/products.html" class="active">Products</a>
+                <a href="/#about">About</a>
+                <a href="/#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="products-page">
+        <div class="products-hero">
+            <h1>Our Collection</h1>
+            <p>Discover our range of natural, vegan beauty products inspired by Moroccan traditions</p>
+        </div>
+
+        <div class="products-container">
+            <div class="products-filter">
+                <h3>Categories</h3>
+                <ul class="filter-list">
+                    <li><a href="#all" class="active">All Products</a></li>
+                    <li><a href="#skincare">Skincare
+                        <ul class="subcategory-list">
+                            <li>Aura OF25 - 255 MAD</li>
+                            <li>Aura Eyes - 349 MAD</li>
+                        </ul>
+                    </a></li>
+                    <li><a href="#haircare">Hair Care
+                        <ul class="subcategory-list">
+                            <li>Silk Bliss - 90 MAD</li>
+                            <li>Macca Boost - 275 MAD</li>
+                            <li>Glimmer Hair - 162 MAD</li>
+                        </ul>
+                    </a></li>
+                    <li><a href="#bodycare">Body Care
+                        <ul class="subcategory-list">
+                            <li>Cocoberry - 229 MAD</li>
+                            <li>Beldi Breeze - from 66 MAD</li>
+                        </ul>
+                    </a></li>
+                </ul>
+
+                <div class="price-filter">
+                    <h3>Price Range</h3>
+                    <div class="price-inputs">
+                        <input type="range" min="0" max="350" value="350" class="price-range" id="priceRange">
+                        <div class="price-values">
+                            <span>0 MAD</span>
+                            <span id="currentPrice">350 MAD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <!-- Skincare Products -->
+                <div class="category-section" id="skincare">
+                    <h2 class="category-title">Skincare</h2>
+                    <div class="category-grid">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="auraof25.jpg" alt="Aura OF25">
+                                <div class="product-overlay">
+                                    <a href="#" class="view-product"><i class="fas fa-eye"></i></a>
+                                    <a href="https://wa.me/+21265493851?text=I'm interested in ordering Aura OF25 (Sun Protection)" target="_blank" class="order-whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                                <span class="product-tag">New</span>
+                            </div>
+                            <div class="product-info">
+                                <h3>Aura OF25</h3>
+                                <p>Hair Oil</p>
+                                <div class="product-meta">
+                                    <div class="product-price">255 MAD</div>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        <span>4.8 (45)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="auraeyes.jpg" alt="Aura Eyes">
+                                <div class="product-overlay">
+                                    <a href="#" class="view-product"><i class="fas fa-eye"></i></a>
+                                    <a href="https://wa.me/+21265493851?text=I'm interested in ordering Aura Eyes (Illuminating Eye Serum)" target="_blank" class="order-whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                                <span class="product-tag">New</span>
+                            </div>
+                            <div class="product-info">
+                                <h3>Aura Eyes</h3>
+                                <p>Illuminating Eye Serum</p>
+                                <div class="product-meta">
+                                    <div class="product-price">349 MAD</div>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        <span>4.8 (85)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Body Care Products -->
+                <div class="category-section" id="bodycare">
+                    <h2 class="category-title">Body Care</h2>
+                    <div class="category-grid">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="cocoberry.jpg" alt="Cocoberry Body Butter">
+                                <div class="product-overlay">
+                                    <a href="#" class="view-product"><i class="fas fa-eye"></i></a>
+                                    <a href="https://wa.me/+21265493851?text=I'm interested in ordering Cocoberry Body Butter" target="_blank" class="order-whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                                <span class="product-tag">New</span>
+                            </div>
+                            <div class="product-info">
+                                <h3>Cocoberry</h3>
+                                <p>Raspberry & Coco Body Moisturizer</p>
+                                <div class="product-meta">
+                                    <div class="product-price">229 MAD</div>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        <span>4.7 (32)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="beldibreeze.jpg" alt="Beldi Breeze">
+                                <div class="product-overlay">
+                                    <a href="#" class="view-product"><i class="fas fa-eye"></i></a>
+                                    <a href="https://wa.me/+21265493851?text=I'm interested in ordering Beldi Breeze" target="_blank" class="order-whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                                <span class="product-tag">Bestseller</span>
+                            </div>
+                            <div class="product-info">
+                                <h3>Beldi Breeze</h3>
+                                <p>Traditional Moroccan Black Soap</p>
+                                <div class="product-variants">
+                                    <p>Akkar Fassi - 69 MAD</p>
+                                    <p>Citron Beldi - 66 MAD</p>
+                                    <p>Nila Beldi - 75 MAD</p>
+                                </div>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9 (120)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hair Care Products -->
+                <div class="category-section" id="haircare">
+                    <h2 class="category-title">Hair Care</h2>
+                    <div class="category-grid">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="silkbliss.jpg" alt="Silk Bliss Hair Mask">
+                                <div class="product-overlay">
+                                    <a href="#" class="view-product"><i class="fas fa-eye"></i></a>
+                                    <a href="https://wa.me/+21265493851?text=I'm interested in ordering Silk Bliss Hair Mask" target="_blank" class="order-whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                                <span class="product-tag">New</span>
+                            </div>
+                            <div class="product-info">
+                                <h3>Silk Bliss</h3>
+                                <p>Rice & Snail Mask Face</p>
+                                <div class="product-meta">
+                                    <div class="product-price">90 MAD</div>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        <span>4.9 (28)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="maccaboostshampoo.jpg" alt="Macca Boost Shampoo">
+                                <div class="product-overlay">
+                                    <a href="#" class="view-product"><i class="fas fa-eye"></i></a>
+                                    <a href="https://wa.me/+21265493851?text=I'm interested in ordering Macca Boost (Revitalizing Hair Shampoo)" target="_blank" class="order-whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Macca Boost</h3>
+                                <p>Hair Shampoo</p>
+                                <div class="product-meta">
+                                    <div class="product-price">275 MAD</div>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        <span>4.7 (95)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="glimmerhair.jpg" alt="Glimmer Hair Oil">
+                                <div class="product-overlay">
+                                    <a href="#" class="view-product"><i class="fas fa-eye"></i></a>
+                                    <a href="https://wa.me/+21265493851?text=I'm interested in ordering Glimmer Hair (Moroccan Argan Hair Oil)" target="_blank" class="order-whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                                <span class="product-tag">Popular</span>
+                            </div>
+                            <div class="product-info">
+                                <h3>Glimmer Hair</h3>
+                                <p>Hair Wax</p>
+                                <div class="product-meta">
+                                    <div class="product-price">162 MAD</div>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        <span>4.9 (150)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info-box">
+                <h2>Get in Touch</h2>
+                <p>Have questions about our products? We'd love to hear from you!</p>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <i class="far fa-envelope"></i>
+                        <div class="method-details">
+                            <h3>Email Us</h3>
+                            <a href="mailto:bio.lozey@gmail.com">bio.lozey@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fab fa-whatsapp"></i>
+                        <div class="method-details">
+                            <h3>WhatsApp</h3>
+                            <a href="https://wa.me/+21265493851">+212 654-938-51</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-pattern"></div>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="web-logo-removebg-preview.png" alt="Lozey Beauty Logo" class="footer-logo">
+                    <p>Discover the beauty secrets of Morocco with our natural and ethical skincare products.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/+21265493851" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:bio.lozey@gmail.com" class="social-icon"><i class="far fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/products.html">Shop</a></li>
+                        <li><a href="/#about">About Us</a></li>
+                        <li><a href="/#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#skincare">Skincare</a></li>
+                        <li><a href="#haircare">Hair Care</a></li>
+                        <li><a href="#bodycare">Body Care</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Connected</h4>
+                    <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                    <form class="newsletter-form" action="mailto:bio.lozey@gmail.com" method="post" enctype="text/plain">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                    <p class="contact-email">Email: <a href="mailto:bio.lozey@gmail.com">bio.lozey@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lozey Beauty. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="shipping.html">Shipping Info</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
