@@ -279,3 +279,50 @@ document.querySelectorAll('.filter-list a').forEach(link => {
         }
     });
 });
+
+// Product Popup Functionality
+function openPopup(variant) {
+    const popupOverlay = document.getElementById('productPopup');
+    const popupVariants = document.querySelectorAll('.popup-variant');
+    
+    // Hide all popup variants
+    popupVariants.forEach(variant => {
+        variant.classList.remove('active');
+    });
+    
+    // Show the selected variant
+    const selectedVariant = document.getElementById(`${variant}-popup`);
+    if (selectedVariant) {
+        selectedVariant.classList.add('active');
+    }
+    
+    // Show the popup overlay
+    popupOverlay.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+}
+
+function closePopup() {
+    const popupOverlay = document.getElementById('productPopup');
+    popupOverlay.classList.remove('active');
+    document.body.style.overflow = ''; // Restore scrolling
+}
+
+// Close popup when clicking outside the content
+document.addEventListener('DOMContentLoaded', function() {
+    const popupOverlay = document.getElementById('productPopup');
+    
+    if (popupOverlay) {
+        popupOverlay.addEventListener('click', function(e) {
+            if (e.target === popupOverlay) {
+                closePopup();
+            }
+        });
+    }
+    
+    // Close popup with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && popupOverlay.classList.contains('active')) {
+            closePopup();
+        }
+    });
+});
