@@ -113,9 +113,9 @@
                         <h3>Beldi Breeze</h3>
                         <p>Traditional Moroccan Black Soap</p>
                         <div class="product-variants">
-                            <p>Akkar Fassi - 69 MAD</p>
-                            <p>Citron Beldi - 66 MAD</p>
-                            <p>Nila Beldi - 75 MAD</p>
+                            <p class="variant-clickable" onclick="openPopup('akkar')">Akkar Fassi - 69 MAD</p>
+                            <p class="variant-clickable" onclick="openPopup('citron')">Citron Beldi - 66 MAD</p>
+                            <p class="variant-clickable" onclick="openPopup('nila')">Nila Beldi - 75 MAD</p>
                         </div>
                     </div>
                 </div>
@@ -135,7 +135,7 @@
                     <div class="product-info">
                         <h3>Aura Eyes</h3>
                         <p>Illuminating Eye Serum</p>
-                        <div class="product-price">349 MAD</div>
+                        <div class="product-price">152 MAD</div>
                     </div>
                 </div>
 
@@ -402,6 +402,60 @@
             </div>
         </div>
     </footer>
+
+    <!-- Product Popups -->
+    <div id="productPopup" class="popup-overlay">
+        <div class="popup-content">
+            <button class="popup-close" onclick="closePopup()">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <!-- Akkar Fassi Popup -->
+            <div id="akkar-popup" class="popup-variant">
+                <div class="popup-image">
+                    <img src="akar.jpg" alt="Akkar Fassi">
+                </div>
+                <div class="popup-details">
+                    <h2>Akkar Fassi</h2>
+                    <div class="popup-price">69 MAD</div>
+                    <a href="https://wa.me/+21265493851?text=I'm interested in ordering Akkar Fassi (Traditional Moroccan Black Soap) - 69 MAD" target="_blank" class="popup-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Citron Beldi Popup -->
+            <div id="citron-popup" class="popup-variant">
+                <div class="popup-image">
+                    <img src="citron.jpg" alt="Citron Beldi">
+                </div>
+                <div class="popup-details">
+                    <h2>Citron Beldi</h2>
+                    <div class="popup-price">66 MAD</div>
+                    <a href="https://wa.me/+21265493851?text=I'm interested in ordering Citron Beldi (Traditional Moroccan Black Soap) - 66 MAD" target="_blank" class="popup-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Nila Beldi Popup -->
+            <div id="nila-popup" class="popup-variant">
+                <div class="popup-image">
+                    <img src="nila.jpg" alt="Nila Beldi">
+                </div>
+                <div class="popup-details">
+                    <h2>Nila Beldi</h2>
+                    <div class="popup-price">75 MAD</div>
+                    <a href="https://wa.me/+21265493851?text=I'm interested in ordering Nila Beldi (Traditional Moroccan Black Soap) - 75 MAD" target="_blank" class="popup-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
